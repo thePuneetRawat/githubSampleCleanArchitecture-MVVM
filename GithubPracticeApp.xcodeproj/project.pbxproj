@@ -13,6 +13,17 @@
 		D95009A52825A954001B0A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95009A32825A954001B0A85 /* Main.storyboard */; };
 		D95009A72825A958001B0A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95009A62825A958001B0A85 /* Assets.xcassets */; };
 		D95009AA2825A958001B0A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95009A82825A958001B0A85 /* LaunchScreen.storyboard */; };
+		D95009B32825AAA0001B0A85 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009B22825AAA0001B0A85 /* AppAppearance.swift */; };
+		D95009B52825AD1B001B0A85 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009B42825AD1B001B0A85 /* AppConfigurations.swift */; };
+		D95009B82825AF5A001B0A85 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009B72825AF5A001B0A85 /* AppFlowCoordinator.swift */; };
+		D95009BB2825B2D1001B0A85 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009BA2825B2D1001B0A85 /* DataTransferService.swift */; };
+		D95009BD2825B2EB001B0A85 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009BC2825B2EB001B0A85 /* NetworkService.swift */; };
+		D95009BF2825B308001B0A85 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009BE2825B308001B0A85 /* Endpoint.swift */; };
+		D95009C12825B32A001B0A85 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009C02825B32A001B0A85 /* NetworkConfig.swift */; };
+		D95009C42825B36A001B0A85 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009C32825B36A001B0A85 /* Cancelable.swift */; };
+		D95009C62825B37B001B0A85 /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009C52825B37B001B0A85 /* ConnectionError.swift */; };
+		D95009C92825B49A001B0A85 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009C82825B49A001B0A85 /* AppDIContainer.swift */; };
+		D95009CB2825B4C2001B0A85 /* PRSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95009CA2825B4C2001B0A85 /* PRSceneDIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		D95009A62825A958001B0A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95009A92825A958001B0A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95009AB2825A958001B0A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95009B22825AAA0001B0A85 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		D95009B42825AD1B001B0A85 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		D95009B72825AF5A001B0A85 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		D95009BA2825B2D1001B0A85 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		D95009BC2825B2EB001B0A85 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D95009BE2825B308001B0A85 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D95009C02825B32A001B0A85 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		D95009C32825B36A001B0A85 /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		D95009C52825B37B001B0A85 /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		D95009C82825B49A001B0A85 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		D95009CA2825B4C2001B0A85 /* PRSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRSceneDIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,66 @@
 		D950099C2825A953001B0A85 /* GithubPracticeApp */ = {
 			isa = PBXGroup;
 			children = (
-				D950099D2825A954001B0A85 /* AppDelegate.swift */,
+				D95009B12825AA5D001B0A85 /* Application */,
+				D95009C22825B34D001B0A85 /* Common */,
+				D95009B92825B225001B0A85 /* Network */,
+				D95009A32825A954001B0A85 /* Main.storyboard */,
 				D950099F2825A954001B0A85 /* SceneDelegate.swift */,
 				D95009A12825A954001B0A85 /* ViewController.swift */,
-				D95009A32825A954001B0A85 /* Main.storyboard */,
-				D95009A62825A958001B0A85 /* Assets.xcassets */,
-				D95009A82825A958001B0A85 /* LaunchScreen.storyboard */,
-				D95009AB2825A958001B0A85 /* Info.plist */,
+				D95009B62825AD64001B0A85 /* Resources */,
 			);
 			path = GithubPracticeApp;
+			sourceTree = "<group>";
+		};
+		D95009B12825AA5D001B0A85 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D950099D2825A954001B0A85 /* AppDelegate.swift */,
+				D95009B22825AAA0001B0A85 /* AppAppearance.swift */,
+				D95009B42825AD1B001B0A85 /* AppConfigurations.swift */,
+				D95009C72825B47E001B0A85 /* DIContainer */,
+				D95009B72825AF5A001B0A85 /* AppFlowCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D95009B62825AD64001B0A85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D95009AB2825A958001B0A85 /* Info.plist */,
+				D95009A62825A958001B0A85 /* Assets.xcassets */,
+				D95009A82825A958001B0A85 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D95009B92825B225001B0A85 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D95009BA2825B2D1001B0A85 /* DataTransferService.swift */,
+				D95009BC2825B2EB001B0A85 /* NetworkService.swift */,
+				D95009BE2825B308001B0A85 /* Endpoint.swift */,
+				D95009C02825B32A001B0A85 /* NetworkConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D95009C22825B34D001B0A85 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D95009C32825B36A001B0A85 /* Cancelable.swift */,
+				D95009C52825B37B001B0A85 /* ConnectionError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D95009C72825B47E001B0A85 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D95009C82825B49A001B0A85 /* AppDIContainer.swift */,
+				D95009CA2825B4C2001B0A85 /* PRSceneDIContainer.swift */,
+			);
+			path = DIContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95009BB2825B2D1001B0A85 /* DataTransferService.swift in Sources */,
+				D95009BF2825B308001B0A85 /* Endpoint.swift in Sources */,
+				D95009C42825B36A001B0A85 /* Cancelable.swift in Sources */,
 				D95009A22825A954001B0A85 /* ViewController.swift in Sources */,
+				D95009BD2825B2EB001B0A85 /* NetworkService.swift in Sources */,
 				D950099E2825A954001B0A85 /* AppDelegate.swift in Sources */,
+				D95009C92825B49A001B0A85 /* AppDIContainer.swift in Sources */,
+				D95009C62825B37B001B0A85 /* ConnectionError.swift in Sources */,
 				D95009A02825A954001B0A85 /* SceneDelegate.swift in Sources */,
+				D95009C12825B32A001B0A85 /* NetworkConfig.swift in Sources */,
+				D95009B52825AD1B001B0A85 /* AppConfigurations.swift in Sources */,
+				D95009CB2825B4C2001B0A85 /* PRSceneDIContainer.swift in Sources */,
+				D95009B82825AF5A001B0A85 /* AppFlowCoordinator.swift in Sources */,
+				D95009B32825AAA0001B0A85 /* AppAppearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +369,14 @@
 		D95009AF2825A958001B0A85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://api.github.com/repos";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NY75FM3VX4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GithubPracticeApp/Info.plist;
+				INFOPLIST_FILE = GithubPracticeApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -313,13 +398,14 @@
 		D95009B02825A958001B0A85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://api.github.com/repos";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NY75FM3VX4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GithubPracticeApp/Info.plist;
+				INFOPLIST_FILE = GithubPracticeApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
